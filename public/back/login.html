@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/houtai.css"/>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	
+  	<div class="container matop_150">
+  		
+  		<div class="col-lg-4 col-lg-offset-4">
+	  		<div class="panel panel-primary">
+	  			<!--头部-->
+				  <div class="panel-heading">
+				    <h3 class="panel-title">后台管理系统</h3>
+				  </div>
+				  
+				  <!--主体内容-->
+				  <div class="panel-body">
+				    <form class="form-horizontal" id="form">
+				    	<!--用户名框-->
+						  <div class="form-group">
+						    <label for="user" class="col-sm-3 control-label">用户名:</label>
+						    <div class="col-sm-9">
+						      <input type="text" class="form-control" id="user" placeholder="请输入用户名" name="username">
+						    </div>
+						  </div>
+						  
+						  <!--密码框-->
+						  <div class="form-group">
+						    <label for="psword" class="col-sm-3 control-label">密　码:</label>
+						    <div class="col-sm-9">
+						      <input type="password" class="form-control" id="psword" placeholder="请输入密码" name="password">
+						    </div>
+						  </div>
+						  
+						    <!--按钮-->
+						  <div class="form-group">
+						    <div class="col-sm-offset-3 col-sm-6">
+						    	<!--重置按钮-->
+						    	<button type="reset" class="btn btn-default pull-left">重置</button>
+						    	<!--提交按钮-->
+						      <button type="submit" class="btn btn-primary pull-right">登录</button>
+						    </div>
+						  </div>
+						</form>
+				  </div>
+				</div>
+  		</div>
+  		
+  	</div>
+		
+		
+		
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+		<script src="js/login.js"></script>
+  </body>
+</html>

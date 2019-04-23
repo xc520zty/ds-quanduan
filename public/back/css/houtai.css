@@ -1,0 +1,14 @@
+body{
+	background: #000000;
+}
+.matop_150{
+	margin-top: 150px;
+}
+
+.container .panel-heading h3{
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	font-size: 26px;
+}
+
