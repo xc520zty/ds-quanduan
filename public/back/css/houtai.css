@@ -1,6 +1,20 @@
-body{
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.body-b{
 	background: #000000;
 }
+	
+
 .matop_150{
 	margin-top: 150px;
 }
@@ -12,3 +26,122 @@ body{
 	font-size: 26px;
 }
 
+/*index   左边菜单栏*/
+.lt-aside{
+	width: 180px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background: #222D32;
+	z-index: 66;
+	transition: all 1s;
+}
+/*js控制的类*/
+.lt-aside.chu{
+	left: -180px;
+}
+
+.lt-aside .aside-toubu{
+	width: 180px;
+	height: 50px;
+	background: #367FA9;
+	text-align: center;
+	line-height: 50px;
+	
+}
+.lt-aside .aside-toubu p{
+	font-size: 20px;
+	color: #fff;
+}
+
+
+.lt-aside .aside-touxiang{
+	text-align: center;
+}
+
+.lt-aside .aside-touxiang img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-top: 30px;
+}
+.lt-aside .aside-touxiang p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.lt-aside .aside-neirong{
+	
+}
+.lt-aside .aside-neirong  a{
+	padding-left: 43px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	height: 40px;
+	color: #fff;
+	border-left: 3px solid transparent;
+	display: block;
+}
+.lt-aside .aside-neirong  a.yangshi{
+	background-color: #1D1F21;
+	border-left: 3px solid #006699;
+}
+
+.lt-aside .aside-neirong .fenlei a{
+	display: block;
+	padding-left: 62px;
+}
+
+
+/*右侧部分*/
+
+.lt-main{
+	
+}
+.lt-main .main-toubu{
+	padding-left: 180px;
+	height: 50px;
+	width: 100%;
+	background: #3C8DBC;
+	line-height: 50px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	transition: all 1s;
+}
+/*js控制的类*/
+.main-toubu.guo{
+	padding-left: 0px;
+}
+
+.lt-main .main-toubu span{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/*右侧内容中的内容部分*/
+
+.lt-main .main-neirong{
+	padding-top: 50px;
+	padding-left: 195px;
+	margin-top: 20px;
+	transition: all 1s;
+}
+/*js控制的类*/
+.main-neirong.guo1{
+	padding-left: 15px;
+}
+
+
+/*模态框*/
+#motaik .modal-body p{
+	color: #A94442;
+}
