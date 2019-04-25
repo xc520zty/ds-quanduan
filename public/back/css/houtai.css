@@ -145,3 +145,10 @@ a:active {
 #motaik .modal-body p{
 	color: #A94442;
 }
+
+/*用户页中表格的样式*/
+.biaoge th,
+.biaoge tbody tr td{
+	text-align: center;
+	vertical-align: middle
+}
