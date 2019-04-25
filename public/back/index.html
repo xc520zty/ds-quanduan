@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap-validator/css/bootstrapValidator.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/houtai.css"/>
     
-  </head>
+  </head>  
   <body>
   	
   	<!--左边的菜单栏-->
@@ -86,8 +86,11 @@
 				</ol>
 				
 				<!--不同页面的不同内容-->
-				<div class="">
+				<div class="tu">
 					
+					<div id="tu-left" style="width: 600px;height:400px;" class="pull-left"></div>
+					
+					<div id="tu-right" style="width: 600px;height:400px;" class="pull-right"></div>
 				</div>
 				
 			</div>
@@ -123,11 +126,12 @@
 		  </div>
 		</div>
 		
-		<script src="lib/nprogress/nprogress.js"></script>
+		<script src="lib/nprogress/nprogress.js"></script><!--进度条插件-->
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-		<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+		<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script><!--表单验证插件-->
+		<script src="lib/echarts/echarts.min.js"></script><!--图表插件-->
 		<script src="js/houtaitongyong.js"></script>
-		
+		<script src="js/index.js"></script>
   </body>
 </html>
