@@ -164,3 +164,13 @@ a:active {
 	margin-bottom: 20px;
 }
 
+/*二级分类中的表格样式*/
+.erji-fenlei th,
+.erji-fenlei tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.erji-fenlei table{
+	margin-top: 20px;
+}
