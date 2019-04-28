@@ -216,7 +216,7 @@ brandId=1&num=2
 + 接口地址
   /category/queryTopCategoryPaging
 + 请求方式
-  GET
+  GET														
 + 参数说明
 | 参数名称     | 是否必须 | 说明   |
 | -------- | ---- | ---- |
