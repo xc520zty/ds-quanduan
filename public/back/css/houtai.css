@@ -152,3 +152,15 @@ a:active {
 	text-align: center;
 	vertical-align: middle
 }
+
+/*一级分类中的表格样式*/
+.yiji-fenlei th,
+.yiji-fenlei tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.yiji-fenlei .bt-tianjia{
+	margin-bottom: 20px;
+}
+

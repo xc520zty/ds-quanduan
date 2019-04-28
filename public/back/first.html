@@ -86,8 +86,28 @@
 				</ol>
 				
 				<!--不同页面的不同内容-->
-				<div class="">
+				<div class="yiji-fenlei">
 					
+					<button class="btn btn-default bt-tianjia">添加分类</button>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<th width="20%">序号</th>
+							<th width="80%">一级分类名</th>
+						</thead>
+						
+						<tbody>
+							<!--<tr>
+								<td>1</td>
+								<td>户外馆</td>
+							</tr>-->
+						</tbody>
+					</table>
+					
+					<!-- 分页dom结构 -->
+		      <div class="text-right">
+		        <ul id="paginator"></ul><!--必须要是ul标签-->
+		      </div>
+		      
 				</div>
 				
 			</div>
@@ -123,11 +143,57 @@
 		  </div>
 		</div>
 		
+		<!--添加分类模态框-->
+		<div class="modal fade " id="yiji-fenlei" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modal-sm" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="tianjia">添加分类</h4>
+		      </div>
+		      
+		      <div class="modal-body">
+		      	
+		      	<form id="form">
+						  <div class="form-group"> 
+						    <input type="text" name="categoryName" placeholder="请输入一级分类" class="form-control"/>
+						  </div>
+						</form>
+		      </div>
+		      
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		        	<!--注意点-->
+		        <!-- html5 新增 form 属性, 可以让表单外的按钮, 与表单关联起来(就相当于是写在了表单里面)-->
+		        <button type="submit" class="btn btn-primary" form="form">添加</button>
+		      </div>
+		      
+		    </div>
+		  </div>
+		</div>
+		
 		<script src="lib/nprogress/nprogress.js"></script>
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<!--表单验证插件-->
 		<script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+		<!--分页插件-->
+		<script src="lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+		<!--模板渲染插件-->
+		<script src="lib/artTemplate/template-web.js"></script>
 		<script src="js/houtaitongyong.js"></script>
+		<script src="js/first.js"></script>
+		
+		<script type="text/html" id="tpl">
+			{{ each rows v i}}
+				<tr>
+					<td>{{ i+1+(page-1)*size }}</td>
+					<td>{{ v.categoryName }}</td>
+				</tr>
+			{{ /each }}
+		</script>
+		
+
 		
   </body>
 </html>
