@@ -81,7 +81,7 @@ $(function() {
     // 参数1: 字段
     // 参数2: 校验状态
     // 参数3: 配置规则, 来配置我们的提示文本
-    $('#form').data("bootstrapValidator").updateStatus("categoryId", "VALID");
+    //$('#form').data("bootstrapValidator").updateStatus("categoryId", "VALID");
   });
 
   // 4. 配置图片上传

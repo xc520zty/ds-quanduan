@@ -174,3 +174,15 @@ a:active {
 .erji-fenlei table{
 	margin-top: 20px;
 }
+
+
+/*商品管理中的表格样式*/
+.shangping th,
+.shangping tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.shangping table{
+	margin-top: 20px;
+}
