@@ -1,0 +1,66 @@
+/*左边的部分*/
+/*
+ 注意区域滚动一定要给父盒子加相对定位
+ * */
+.lt-leirong .leirong-left{
+	width: 90px;
+	height: 100%;
+	float: left;
+	background: #fff;
+	position: relative;
+}
+
+
+.lt-leirong .leirong-left .left-gun ul li{
+	float: left;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	background: #E3E4E5;
+}
+.lt-leirong .leirong-left .left-gun ul li:last-child{
+	border-bottom: 1px solid #ccc;
+}
+.lt-leirong .leirong-left .left-gun ul li a{
+	color: #666;
+	display: block;
+}
+/*要通过js控制的类*/
+.lt-leirong .leirong-left .left-gun ul li.gai{
+	background: #fff;
+	border: none;
+}
+
+.xianshi{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 14px;
+	
+}
+
+
+/*右边的部分*/
+.lt-leirong .leirong-right{
+	overflow: hidden;
+	background: #fff;
+	height: 100%;
+	position: relative;
+}
+
+.lt-leirong .leirong-right .right-gun li{
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	width: 33.3%;
+}
+
+.lt-leirong .leirong-right .right-gun li a{
+	display: block;
+}
+.lt-leirong .leirong-right .right-gun li a img{
+	width: 70px;
+	height: 50px;
+}
