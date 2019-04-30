@@ -1,0 +1,54 @@
+.lt-leirong .tu-dao{
+	padding: 10px;
+	width: 100%;
+}
+
+
+.lt-leirong .tu-dao li{
+	float: left;
+	width: 33.3%;
+}
+.lt-leirong .tu-dao li a{
+	display: block;
+	
+}
+.lt-leirong .tu-dao li a img{
+	width: 100%;
+	display: block;
+}
+
+
+/*商品列表*/
+
+.lt-leirong .shang-lie{
+	padding: 10px;
+	width: 100%;
+	
+}
+.lt-leirong .shang-lie li{
+	float: left;
+	width: 49%;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.lt-leirong .shang-lie li:nth-child(2n-1){
+	margin-right: 2%;
+}
+
+.lt-leirong .shang-lie li a{
+	display: block;
+	text-align: center;
+}
+.lt-leirong .shang-lie li a img{
+	width: 150px;
+	height: 150px;
+}
+.lt-leirong .shang-lie li .jia{
+	color: #FF4A4A;
+}
+.lt-leirong .shang-lie li .jia1{
+	text-decoration:line-through
+}
+.lt-leirong .shang-lie li button{
+	margin-bottom: 10px;
+}

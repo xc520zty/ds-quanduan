@@ -1,0 +1,105 @@
+body,html{
+	height: 100%;
+}
+
+ul{
+	  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.lt-bao{
+	height: 100%;
+	width: 100%;
+	max-width: 640px;
+	min-width: 320px;
+	background: #fff;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 45px;
+	padding-bottom: 55px;
+	overflow: hidden;
+}
+/*头部*/
+.lt-tou{
+	height: 45px;
+	background: #006699;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+/*内容*/
+.lt-leirong{
+	position: relative;
+	/*区域滚动的外层必须要相对定位
+	因为区域滚动是绝对定位的，外层不相对定位会导致其
+	区域滚动的内容溢出
+	* */
+	height: 100%;
+	width: 100%;
+}
+
+/*尾部*/
+.lt-wei{
+	height: 55px;
+	background: #006699;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+/*头部图标*/
+.lt-tou a{
+	display: block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	color: #fff;
+}
+.lt-tou .tou-left{
+	top: 0;
+	left: 0;
+}
+
+.lt-tou p{
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.lt-tou .tou-right{
+	top: 0;
+	right: 0;
+}
+
+/*尾部图标*/
+.lt-wei ul li{
+	width: 25%;
+	height: 55px;
+	text-align: center;
+	float: left;
+}
+
+.lt-wei ul li a{
+	display: block;
+	padding-top: 8px;
+	color: #fff;
+}
+.lt-wei ul li a p{	
+	color: #fff;
+}
+
+.lt-wei ul li a.you{
+	color: orange;
+}
+.lt-wei ul li a.you p{
+	color: orange;
+}
